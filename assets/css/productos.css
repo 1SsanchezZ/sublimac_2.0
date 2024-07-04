@@ -1,0 +1,34 @@
+        /* Asegúrate de que el contenedor principal tenga un margen superior adecuado */
+        .main-content {
+            margin-top: 100px; /* Ajusta este valor según la altura de tu barra de navegación */
+        }
+
+        /* Estilo para centrar los elementos dentro del contenedor principal */
+        #items {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        /* Estilo para cada tarjeta de cojín */
+        #items .card {
+            flex: 1 1 300px;
+            max-width: 300px;
+            margin: 10px;
+            text-align: center;
+        }
+
+        /* Opcional: Estilo para la imagen dentro de cada tarjeta */
+        #items .card img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Ajuste de estilos para diferentes tamaños de pantalla */
+        @media (max-width: 768px) {
+            #items .card {
+                flex: 1 1 100%;
+                max-width: 100%;
+            }
+        }
